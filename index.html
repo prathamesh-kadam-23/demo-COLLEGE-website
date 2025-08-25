@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navsahyadri Education Society's Group of Institutions - Excellence in Technical Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <!-- Top Header with Two Logos and College Name -->
+            <div class="header-top">
+                <!-- Left Logo -->
+                <div class="logo-space">
+                    <div class="logo-placeholder">
+                        LEFT LOGO<br>
+                        <small>150x100</small>
+                    </div>
+                </div>
+
+                <!-- College Name and Title -->
+                <div class="college-name">
+                    <h1>NAVSAHYADRI EDUCATION SOCIETY'S<br>GROUP OF INSTITUTIONS</h1>
+                </div>
+
+                <!-- Right Logo -->
+                <div class="logo-space">
+                    <div class="logo-placeholder">
+                        RIGHT LOGO<br>
+                        <small>150x100</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-nav">
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link active" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('about')">About</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('departments')">Departments</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('admissions')">Admissions</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('facilities')">Facilities</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('placements')">Placements</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('gallery')">Gallery</a></li>
+                    <li><a href="#" class="nav-link" onclick="showPage('contact')">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="cta-buttons">
+                <button class="cta-btn cta-primary" onclick="openApplyModal()">Apply Now</button>
+                <a href="#" class="cta-btn cta-secondary" onclick="showPage('admissions')">Admissions Info</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <h2 class="hero-title">BUILD YOUR FUTURE, CHOOSE YOUR BRANCH</h2>
+                    <p class="hero-subtitle">
+                        Excellence in Technical Education! Where Innovation Meets Practical Learning in Our Polytechnic Programs
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-hero btn-hero-primary" onclick="openApplyModal()">
+                            🎓 Apply Now
+                        </a>
+                        <a href="#" class="btn-hero btn-hero-secondary" onclick="showPage('departments')">
+                            📚 Explore Departments
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Departments Section -->
+            <section class="departments">
+                <div class="container">
+                    <h2 class="section-title">Our Departments</h2>
+                    <div class="departments-grid">
+                        <div class="dept-card" onclick="showDepartment('it')">
+                            <div class="dept-icon">💻</div>
+                            <h3>Information Technology</h3>
+                            <p>Programming, Web Development, Cybersecurity</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('cs')">
+                            <div class="dept-icon">🔬</div>
+                            <h3>Computer Science</h3>
+                            <p>Software Engineering, AI/ML, Algorithms</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('civil')">
+                            <div class="dept-icon">🏗️</div>
+                            <h3>Civil Engineering</h3>
+                            <p>Construction, Structural Design, Surveying</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('electrical')">
+                            <div class="dept-icon">⚡</div>
+                            <h3>Electrical Engineering</h3>
+                            <p>Power Systems, Automation, Renewable Energy</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('mechanical')">
+                            <div class="dept-icon">⚙️</div>
+                            <h3>Mechanical Engineering</h3>
+                            <p>Manufacturing, Automotive, Machine Design</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Us</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📈</div>
+                            <h4>95%+ Placement Record</h4>
+                            <p>Excellent placement support with industry connections</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🏢</div>
+                            <h4>Modern Infrastructure</h4>
+                            <p>State-of-the-art labs and workshop facilities</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">👨‍🏫</div>
+                            <h4>Industry Experience</h4>
+                            <p>Faculty with practical industry background</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💰</div>
+                            <h4>Affordable Fees</h4>
+                            <p>Quality education at reasonable cost</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <h2>About Our Institution</h2>
+                        <p>
+                            Navsahyadri Education Society's Group of Institutions stands as a beacon of excellence in technical education, 
+                            committed to nurturing the next generation of skilled professionals and innovators.
+                        </p>
+                        <p>
+                            With state-of-the-art facilities, experienced faculty, and a curriculum designed 
+                            to meet industry demands, we prepare our students for successful careers in 
+                            technology and engineering.
+                        </p>
+                        <p>
+                            Our mission is to provide quality technical education that combines theoretical 
+                            knowledge with practical skills, fostering creativity, innovation, and 
+                            professional excellence.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">About Our Institution</h1>
+                    <p class="page-subtitle">Excellence in Technical Education Since Our Establishment</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="content-section">
+                        <h3>Our Vision</h3>
+                        <p>To be a leading group of institutions in India, providing world-class technical education and producing industry-ready professionals who contribute meaningfully to society and the global economy.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Our Mission</h3>
+                        <p>To deliver comprehensive technical education through innovative teaching methodologies, state-of-the-art infrastructure, and industry partnerships, ensuring our graduates are equipped with both theoretical knowledge and practical skills.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Our Values</h3>
+                        <p>Excellence in education, integrity in all dealings, innovation in teaching and learning, inclusivity in our community, and commitment to sustainable development and social responsibility.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Our History</h3>
+                        <p>Established with the vision of bridging the gap between academic learning and industry requirements, Navsahyadri Education Society's Group of Institutions has been at the forefront of technical education, continuously evolving to meet the changing needs of the industry and society.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments Page -->
+        <div id="departments-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Our Departments</h1>
+                    <p class="page-subtitle">Choose Your Path to Success</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="departments-grid">
+                        <div class="dept-card" onclick="showDepartment('it')">
+                            <div class="dept-icon">💻</div>
+                            <h3>Information Technology</h3>
+                            <p>Master the digital world with comprehensive IT education covering modern technologies and industry practices.</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('cs')">
+                            <div class="dept-icon">🔬</div>
+                            <h3>Computer Science</h3>
+                            <p>Dive deep into computer science fundamentals and emerging technologies for tomorrow's digital solutions.</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('civil')">
+                            <div class="dept-icon">🏗️</div>
+                            <h3>Civil Engineering</h3>
+                            <p>Build the infrastructure of tomorrow with comprehensive civil engineering education and practical training.</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('electrical')">
+                            <div class="dept-icon">⚡</div>
+                            <h3>Electrical Engineering</h3>
+                            <p>Power the future with electrical engineering expertise in automation, renewable energy, and power systems.</p>
+                        </div>
+                        <div class="dept-card" onclick="showDepartment('mechanical')">
+                            <div class="dept-icon">⚙️</div>
+                            <h3>Mechanical Engineering</h3>
+                            <p>Drive innovation in manufacturing, automotive, and machine design with comprehensive mechanical engineering education.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Information Technology Department -->
+        <div id="it-page" class="page dept-detail">
+            <div class="dept-header">
+                <div class="container">
+                    <h2>Information Technology</h2>
+                    <p>Master the digital world with comprehensive IT education covering modern technologies and industry practices.</p>
+                </div>
+            </div>
+            <div class="dept-content">
+                <div class="container">
+                    <div class="dept-overview">
+                        <h3>Department Overview</h3>
+                        <p>The IT department focuses on modern technologies including web development, software engineering, cybersecurity, and cloud computing. Students gain hands-on experience with programming, networking, and system administration.</p>
+                        <p>Our labs are equipped with the latest hardware and software tools to ensure industry-relevant practical training.</p>
+                    </div>
+                    <div class="careers-section">
+                        <h4>Career Opportunities</h4>
+                        <div class="careers-list">
+                            <div class="career-item">Web Developer</div>
+                            <div class="career-item">System Administrator</div>
+                            <div class="career-item">Network Engineer</div>
+                            <div class="career-item">Cybersecurity Analyst</div>
+                            <div class="career-item">Cloud Engineer</div>
+                            <div class="career-item">IT Support Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computer Science Department -->
+        <div id="cs-page" class="page dept-detail">
+            <div class="dept-header">
+                <div class="container">
+                    <h2>Computer Science</h2>
+                    <p>Dive deep into computer science fundamentals and emerging technologies for tomorrow's digital solutions.</p>
+                </div>
+            </div>
+            <div class="dept-content">
+                <div class="container">
+                    <div class="dept-overview">
+                        <h3>Department Overview</h3>
+                        <p>The Computer Science department focuses on the theoretical and practical aspects of computing. Students learn algorithms, data structures, software engineering principles, and emerging technologies like AI and machine learning.</p>
+                        <p>Our curriculum is designed to develop problem-solving skills and computational thinking that are essential in today's technology-driven world.</p>
+                    </div>
+                    <div class="careers-section">
+                        <h4>Career Opportunities</h4>
+                        <div class="careers-list">
+                            <div class="career-item">Software Engineer</div>
+                            <div class="career-item">System Analyst</div>
+                            <div class="career-item">Mobile App Developer</div>
+                            <div class="career-item">Data Scientist</div>
+                            <div class="career-item">AI/ML Engineer</div>
+                            <div class="career-item">Research Scientist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Civil Engineering Department -->
+        <div id="civil-page" class="page dept-detail">
+            <div class="dept-header">
+                <div class="container">
+                    <h2>Civil Engineering</h2>
+                    <p>Build the infrastructure of tomorrow with comprehensive civil engineering education and practical training.</p>
+                </div>
+            </div>
+            <div class="dept-content">
+                <div class="container">
+                    <div class="dept-overview">
+                        <h3>Department Overview</h3>
+                        <p>Our Civil Engineering department prepares students to design, build, and maintain the infrastructure that modern society relies on. From buildings and bridges to roads and water systems, our graduates shape the built environment.</p>
+                        <p>Students learn structural design, construction management, surveying, and environmental engineering through both classroom instruction and hands-on project work.</p>
+                    </div>
+                    <div class="careers-section">
+                        <h4>Career Opportunities</h4>
+                        <div class="careers-list">
+                            <div class="career-item">Structural Engineer</div>
+                            <div class="career-item">Construction Manager</div>
+                            <div class="career-item">Project Engineer</div>
+                            <div class="career-item">Site Supervisor</div>
+                            <div class="career-item">Surveyor</div>
+                            <div class="career-item">Environmental Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrical Engineering Department -->
+        <div id="electrical-page" class="page dept-detail">
+            <div class="dept-header">
+                <div class="container">
+                    <h2>Electrical Engineering</h2>
+                    <p>Power the future with electrical engineering expertise in automation, renewable energy, and power systems.</p>
+                </div>
+            </div>
+            <div class="dept-content">
+                <div class="container">
+                    <div class="dept-overview">
+                        <h3>Department Overview</h3>
+                        <p>The Electrical Engineering department focuses on power generation, transmission, and utilization. Students learn about electrical circuits, control systems, power electronics, and renewable energy technologies.</p>
+                        <p>Hands-on lab sessions provide practical experience with electrical machinery, instrumentation, and automation systems.</p>
+                    </div>
+                    <div class="careers-section">
+                        <h4>Career Opportunities</h4>
+                        <div class="careers-list">
+                            <div class="career-item">Electrical Engineer</div>
+                            <div class="career-item">Automation Engineer</div>
+                            <div class="career-item">Power Systems Engineer</div>
+                            <div class="career-item">Control Systems Engineer</div>
+                            <div class="career-item">Maintenance Engineer</div>
+                            <div class="career-item">Energy Consultant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mechanical Engineering Department -->
+        <div id="mechanical-page" class="page dept-detail">
+            <div class="dept-header">
+                <div class="container">
+                    <h2>Mechanical Engineering</h2>
+                    <p>Drive innovation in manufacturing, automotive, and machine design with comprehensive mechanical engineering education.</p>
+                </div>
+            </div>
+            <div class="dept-content">
+                <div class="container">
+                    <div class="dept-overview">
+                        <h3>Department Overview</h3>
+                        <p>The Mechanical Engineering department covers fundamentals of mechanics, thermodynamics, manufacturing processes, and machine design. Students gain hands-on experience in workshops and through design projects.</p>
+                        <p>Industry collaborations and internships provide real-world exposure and career opportunities.</p>
+                    </div>
+                    <div class="careers-section">
+                        <h4>Career Opportunities</h4>
+                        <div class="careers-list">
+                            <div class="career-item">Design Engineer</div>
+                            <div class="career-item">Production Engineer</div>
+                            <div class="career-item">Maintenance Engineer</div>
+                            <div class="career-item">Automotive Engineer</div>
+                            <div class="career-item">Quality Assurance Engineer</div>
+                            <div class="career-item">Research & Development Engineer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Admissions Page -->
+        <div id="admissions-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Admissions</h1>
+                    <p class="page-subtitle">Start Your Journey to Excellence</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="content-section">
+                        <h3>Admission Requirements</h3>
+                        <p>Candidates must have completed 10th standard with minimum 50% marks in Mathematics and Science subjects. Admission is based on merit and entrance examination performance.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Application Process</h3>
+                        <p>Applications can be submitted online through our admission portal. Required documents include mark sheets, transfer certificate, and category certificate (if applicable).</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Important Dates</h3>
+                        <p>Application period: May - July<br>Entrance Exam: August<br>Counseling: September<br>Classes Begin: August</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Fee Structure</h3>
+                        <p>We offer quality education at affordable rates. Fee details vary by department and category. Scholarships are available for deserving students.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Admissions Page -->
+        <!-- ...existing admissions page... -->
+
+        
+        <!-- Facilities Page -->
+        <div id="facilities-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Facilities</h1>
+                    <p class="page-subtitle">State-of-the-Art Infrastructure for Learning</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="content-section">
+                        <h3>Modern Laboratories</h3>
+                        <p>Well-equipped labs for each department with latest instruments and software for hands-on learning and research.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Library and Digital Resources</h3>
+                        <p>Extensive collection of books, journals, and digital resources. Modern reading halls and computer terminals for research.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Sports and Recreation</h3>
+                        <p>Sports complex with facilities for various indoor and outdoor games. Regular tournaments and fitness programs.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Hostel Accommodation</h3>
+                        <p>Comfortable hostel facilities for outstation students with mess, recreational areas, and study halls.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Placements Page -->
+        <div id="placements-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Placements</h1>
+                    <p class="page-subtitle">Your Gateway to Successful Careers</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="content-section">
+                        <h3>Placement Record</h3>
+                        <p>Our institution boasts an impressive 95%+ placement record with students being recruited by top companies across various industries.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Industry Partners</h3>
+                        <p>Strong partnerships with leading companies in IT, manufacturing, construction, and service sectors ensure excellent placement opportunities.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Career Guidance</h3>
+                        <p>Comprehensive career counseling, resume building workshops, interview preparation, and soft skills development programs.</p>
+                    </div>
+                    <div class="content-section">
+                        <h3>Training Programs</h3>
+                        <p>Regular training sessions on emerging technologies, industry trends, and professional skills to enhance employability.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Placements Page -->
+        <!-- ...existing placements page... -->
+
+        <!-- Gallery Page -->
+        <div id="gallery-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Gallery</h1>
+                    <p class="page-subtitle">Campus Life & Events</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="gallery-sections">
+
+                        <!-- FUSIONX -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">FUSIONX</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/fusionx1.jpg" alt="FusionX 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/fusionx2.jpg" alt="FusionX 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                        <!-- INDUSTRIAL VISIT -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">INDUSTRIAL VISIT</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/industrial1.jpg" alt="Industrial Visit 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/industrial2.jpg" alt="Industrial Visit 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                        <!-- TY FAREWELL -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">TY FAREWELL</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/farewell1.jpg" alt="TY Farewell 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/farewell2.jpg" alt="TY Farewell 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                        <!-- ENGINEERS DAY -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">ENGINEERS DAY</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/engineers1.jpg" alt="Engineers Day 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/engineers2.jpg" alt="Engineers Day 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                        <!-- WINNERS -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">WINNERS</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/winners1.jpg" alt="Winners 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/winners2.jpg" alt="Winners 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                        <!-- OTHER -->
+                        <div class="gallery-section">
+                            <h2 class="gallery-section-title">OTHER</h2>
+                            <div class="gallery-row">
+                                <div class="gallery-item">
+                                    <img src="gallery/other1.jpg" alt="Other 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="gallery/other2.jpg" alt="Other 2">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1 class="page-title">Contact Us</h1>
+                    <p class="page-subtitle">Get in Touch for More Information</p>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <h4>Contact Information</h4>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <strong>Address:</strong><br>
+                                    Navsahyadri Education Society's<br>
+                                    Group of Institutions<br>
+                                    Education District, City - 123456<br>
+                                    State, India
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div>
+                                    <strong>Phone:</strong><br>
+                                    +91 12345 67890<br>
+                                    +91 98765 43210
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    info@navsahyadriedu.edu.in<br>
+                                    admissions@navsahyadriedu.edu.in
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h4>Send us a Message</h4>
+                            <form id="contactForm" onsubmit="handleContactForm(event)">
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="admissions">Admissions Inquiry</option>
+                                        <option value="courses">Course Information</option>
+                                        <option value="facilities">Facilities</option>
+                                        <option value="placements">Placements</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" required placeholder="Please provide details about your inquiry."></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Apply Modal -->
+    <!-- ...existing apply modal... -->
+
+    <!-- Apply Modal -->
+    <div id="applyModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeApplyModal()">&times;</button>
+            <h3>🎓 Apply for Admission</h3>
+
+            <div id="successMessage" class="success-message">
+                Your application has been submitted successfully! We will contact you soon.
+            </div>
+
+            <div id="errorMessage" class="error-message">
+                Please fill in all required fields correctly.
+            </div>
+
+            <form id="applyForm" onsubmit="handleApplyForm(event)">
+                <div class="form-group">
+                    <label for="studentName">Full Name *</label>
+                    <input type="text" id="studentName" name="studentName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentEmail">Email Address *</label>
+                    <input type="email" id="studentEmail" name="studentEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentPhone">Phone Number *</label>
+                    <input type="tel" id="studentPhone" name="studentPhone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department *</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="it">Information Technology</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="civil">Civil Engineering</option>
+                        <option value="electrical">Electrical Engineering</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="class10Marks">10th Standard Percentage *</label>
+                    <input type="number" id="class10Marks" name="class10Marks" min="40" max="100" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Complete Address *</label>
+                    <textarea id="address" name="address" required placeholder="Enter your complete postal address"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
